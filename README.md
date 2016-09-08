@@ -36,4 +36,4 @@ csvwrite('data.csv', dosnes_data);
 ``` 
 
 Now open `dosnes.html` with Firefox. Don't use Chrome. You will have the interactive visualization in your browser.
-[![Simple example](img/dosnes_example.png)]
+![Simple example](img/dosnes_example.png =960x540)
