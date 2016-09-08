@@ -1,4 +1,5 @@
 #Doubly Stochastic Neighbor Embedding on Spheres
+DOSNES is a new method to visualize your data.
 
 ##Project Page
 http://yaolubrain.github.io/dosnes/
