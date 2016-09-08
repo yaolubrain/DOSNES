@@ -35,7 +35,7 @@ dosnes_data = [Y ones(length(Y),1) 5*ones(length(Y),1)];
 csvwrite('data.csv', dosnes_data);
 ``` 
 
-Now open `dosnes.html` with Firefox. Don't use Chrome. You will have the interactive visualization in your browser.
+Now open `dosnes.html` with Firefox. Don't use Chrome. You now have the DOSNES visualization in your browser.
 
 <img src="img/dosnes_example.png" width="500">
 
