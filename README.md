@@ -18,13 +18,13 @@ X = bsxfun(@minus, X, mean(X));
 D = pdist2(X,X,'squaredeuclidean');
 P = exp(-D);
 
-% Normalize it to be doubly stochastic by Sinkhorn-Knopp method
+% Normalize the similarity matrix to be doubly stochastic by Sinkhorn-Knopp method
 for i = 1:100
     P = bsxfun(@rdivide, P, sum(P,1));
     P = bsxfun(@rdivide, P, sum(P,2));
 end    
 
-% Run t-SNE with the spherical constraint.
+% Run t-SNE with the spherical constraint
 Y = tsne_p_sphere(P);
 
 % Normalize Y to have unity radius for visualization
