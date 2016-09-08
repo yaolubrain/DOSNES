@@ -1,0 +1,10 @@
+baroque
+blues
+classical
+country
+edance
+jazz
+metal
+raphiphop
+rockroll
+romantic

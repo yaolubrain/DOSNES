@@ -1,0 +1,20 @@
+clear all
+
+load Y_dosnes_DSOM_worldtrade_pajek.mat
+load DSOM_worldtrade_pajek.mat
+
+d = sum(A,1);
+
+
+Y = bsxfun(@minus, Y, mean(Y,1));
+Y = bsxfun(@rdivide, Y, sqrt(sum(Y.^2, 2)));
+
+data_ = [Y C log(d)'];
+
+csvwrite('dosnes.csv', nips_data);
+
+fid = fopen('labels.txt','w');
+for i = 1:length(Y)
+    fprintf(fid,'%s\n',authors_names{i});
+end
+fclose(fid);

@@ -38,9 +38,6 @@ function [ydata P Q cost] = tsne_p_sphere(P)
     P = max(P ./ sum(P(:)), realmin);                   % make sure P-values sum to one
     
     const = sum(P(:) .* log(P(:)));                     % constant in KL divergence
-    if ~initial_solution
-        P = P * 4;                                      % lie about the P-vals to find better local minima
-    end
       
     ydata = .0001 * randn(n, no_dims);
 
@@ -77,9 +74,6 @@ function [ydata P Q cost] = tsne_p_sphere(P)
         if iter == mom_switch_iter
             momentum = final_momentum;
         end
-        if iter == stop_lying_iter && ~initial_solution
-            P = P ./ 4;
-        end
         
         % Print out progress
         if ~rem(iter, 10)
@@ -87,14 +81,5 @@ function [ydata P Q cost] = tsne_p_sphere(P)
             disp(['Iteration ' num2str(iter) ': error is ' num2str(cost)]);
         end
         
-        % Display scatter plot (maximally first three dimensions)
-        if ~rem(iter, 10)
-        
-            scatter3(ydata(:,1), ydata(:,2), ydata(:,3), 40, 'filled');
-            
-            axis tight
-            axis off
-            drawnow
-        end
     end
     
