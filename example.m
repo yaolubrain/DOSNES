@@ -1,5 +1,4 @@
 X = randn(1000, 10);
-X = bsxfun(@minus, X, mean(X));
 D = pdist2(X,X,'seuclidean');
 P = exp(-D);
 
@@ -9,7 +8,6 @@ for i = 1:100
 end    
 
 Y = tsne_p_sphere(P);
-
 
 Y = bsxfun(@rdivide, Y, sqrt(sum(Y.^2, 2)));
 
