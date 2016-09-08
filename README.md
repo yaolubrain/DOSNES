@@ -39,5 +39,5 @@ Now open `dosnes.html` with Firefox. Don't use Chrome. You now have the DOSNES v
 
 <img src="img/dosnes_example.png" width="500">
 
-For examples of more features, please see the `demo` folder.
+For visualizations of more features and real world data, please see the `demo` folder.
 
