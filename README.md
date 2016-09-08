@@ -14,7 +14,6 @@ Here is a simple example.
 ``` 
 % Generate data and its similarity matrix
 X = randn(1000, 10);
-X = bsxfun(@minus, X, mean(X));
 D = pdist2(X,X,'squaredeuclidean');
 P = exp(-D);
 
