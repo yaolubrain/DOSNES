@@ -5,14 +5,15 @@ DOSNES is a new method to visualize your data.
 http://yaolubrain.github.io/dosnes/
 
 ##How to use?
-Here is a simple example
-
+Here is a simple example. Given a similartiy matrix `P`
 ``` 
+% Normalize it to be doubly stochastic by Sinkhorn-Knopp method
 for i = 1:100
     P = bsxfun(@rdivide, sum(P,1));
     P = bsxfun(@rdivide, sum(P,2));
 end    
 
+% Run t-SNE with the spherical constraint.
 Y = tsne_p_sphere(P);
 ``` 
 
