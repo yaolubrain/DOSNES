@@ -5,8 +5,13 @@ DOSNES is a new method to visualize your data.
 http://yaolubrain.github.io/dosnes/
 
 ##How to use?
-Here is a simple example. Given a similartiy matrix `P`
+Here is a simple example. 
 ``` 
+% Generate data and its similarity matrix
+X = randn(1000, 10);
+D = pdist2(X,X);
+P = exp(-D);
+
 % Normalize it to be doubly stochastic by Sinkhorn-Knopp method
 for i = 1:100
     P = bsxfun(@rdivide, sum(P,1));
