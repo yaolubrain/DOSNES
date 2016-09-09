@@ -27,7 +27,7 @@ end
 Y = tsne_p_sphere(P);
 
 % Normalize Y to have unity radius for visualization
-Y = bsxfun(@rdivide, Y, sqrt(sum(Y.^2,2)));
+Y = bsxfun(@rdivide,Y,sqrt(sum(Y.^2,2)));
 
 % Save the data 
 dosnes_data = [Y ones(length(Y),1) 5*ones(length(Y),1)];
