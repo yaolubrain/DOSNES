@@ -1,15 +1,15 @@
-#DOSNES
+# DOSNES
 DOSNES is a new method to visualize your data.
 
-##Project Page
+## Project Page
 http://yaolubrain.github.io/dosnes/
 
-##Paper
+## Paper
 [Doubly Stochastic Neighbor Embedding on Spheres] (http://arxiv.org/abs/1609.01977) <br>
 Yao Lu\*, Zhirong Yang\*, Jukka Corander <br>
 (*equal contribution)
 
-##How to use?
+## How to use?
 Here is a simple example. 
 ``` 
 % Generate data and its similarity matrix
