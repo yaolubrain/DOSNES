@@ -285,6 +285,7 @@ function animate() {
     var vec = new THREE.Vector3(0,0,1);
     vec.applyMatrix4( visibleLabels.matrixWorld );
     
+    // ray tracing to highlight the active label
     mouseFreeScale.x = (mouseFree.x / window.innerWidth ) * 2 - 1;
     mouseFreeScale.y = - ( mouseFree.y / window.innerHeight ) * 2 + 1;     
 
