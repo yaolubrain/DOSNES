@@ -38,5 +38,6 @@ Now open `dosnes.html` with Firefox. Don't use Chrome. You now have the DOSNES v
 
 <img src="img/dosnes_example.png" width="500">
 
-For visualizations of more features and real world data, please see the `demo` folder.
+For visualizations of more features and real world data, please see the `demo` folder. In main javascript code of the demos,
+`makeTextSprite()` is to create the facing-to-viewer text labels. In the CSV files, the first three columns are XYZ-coordinates, the forth column is the class label and the last column is the size of the data points.
 
