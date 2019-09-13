@@ -5,7 +5,7 @@ DOSNES is a new method to visualize your data.
 http://yaolubrain.github.io/dosnes/
 
 ## Paper
-[Doubly Stochastic Neighbor Embedding on Spheres] (http://arxiv.org/abs/1609.01977) <br>
+[Doubly Stochastic Neighbor Embedding on Spheres](http://arxiv.org/abs/1609.01977) <br>
 Yao Lu, Jukka Corander, Zhirong Yang <br>
 *Pattern Recognition Letters*, 2019
 
