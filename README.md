@@ -6,8 +6,8 @@ http://yaolubrain.github.io/dosnes/
 
 ## Paper
 [Doubly Stochastic Neighbor Embedding on Spheres] (http://arxiv.org/abs/1609.01977) <br>
-Yao Lu\*, Zhirong Yang\*, Jukka Corander <br>
-(*equal contribution)
+Yao Lu, Jukka Corander, Zhirong Yang <br>
+*Pattern Recognition Letters*, 2019
 
 ## How to use?
 Here is a simple example. 
