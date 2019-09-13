@@ -43,3 +43,5 @@ For visualizations of more features and real world data, please see the `demo` f
 In main javascript code of the demos,
 `makeTextSprite()` is to create the facing-to-viewer text labels. In the CSV files, the first three columns are XYZ-coordinates, the forth column is the class label and the last column is the size of the data points.
 
+## Python Implementation
+https://github.com/Coni63/DOSNES
