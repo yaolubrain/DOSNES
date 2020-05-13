@@ -1,5 +1,5 @@
 X = randn(1000, 10);
-D = pdist2(X,X,'seuclidean');
+D = pdist2(X,X,'sqeuclidean');
 P = exp(-D);
 
 for i = 1:100
